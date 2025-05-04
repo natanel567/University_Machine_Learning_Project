@@ -55,9 +55,7 @@ Several classification models were tested, compared, and tuned:
 - KNN Model
 - Multi Layer Perceptron
 
-**Evaluation Metrics:**
-
-- ROC-AUC Curve
+**Evaluation Metric**: ROC-AUC Curve
 
 Models were evaluated on a hold-out validation set to avoid overfitting.
 
