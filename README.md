@@ -74,4 +74,6 @@ Models were evaluated on a hold-out validation set to avoid overfitting.
 23 y/o Computer Science student passionate about AI, data, and real-world applications of machine learning.
 
 ---
+## Acknowledgements
 
+Huge thanks to Naama Tanchuma for collaborating and orginizing the project report file.
