@@ -20,8 +20,8 @@ The dataset consists of tens of thousands of anonymized job candidate records, e
 - `degree_level`
 - `field`
 - `target` (acceptance label: 1 = accepted, 0 = not accepted)
+- and more
 
-> *Note: Feature names were anonymized for the project.*
 
 ---
 
@@ -41,6 +41,8 @@ Significant effort was dedicated to preparing the dataset:
 - **Visualization**:  
   - Histograms and box plots used to understand feature distributions.
   - `.describe()` method applied for statistical summary.
+- **Data Conversion**:
+  - Some data was non-numerical yet was still creatively utilized to evaluate the best model.
 
 ---
 
@@ -50,14 +52,11 @@ Several classification models were tested, compared, and tuned:
 
 - Logistic Regression
 - Random Forest Classifier
-- Gradient Boosting (XGBoost)
-- Support Vector Machine (SVM)
+- KNN Model
+- Multi Layer Perceptron
 
 **Evaluation Metrics:**
 
-- Accuracy
-- Precision / Recall
-- F1-Score
 - ROC-AUC Curve
 
 Models were evaluated on a hold-out validation set to avoid overfitting.
@@ -66,54 +65,15 @@ Models were evaluated on a hold-out validation set to avoid overfitting.
 
 ## 🏆 Results Summary
 
-- The best-performing model achieved **over 90% accuracy**, with strong precision and recall scores.
+- The best-performing model (the Random Forest Classifier) achieved AUC score of 0.86 when tested with unknown data.
 - Feature importance analysis provided insights into which variables influenced hiring decisions the most.
-
----
-
-## 🚀 How to Run
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/job-candidate-ml.git
-   cd job-candidate-ml
-   ```
-
-2. Install required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Launch the notebook:
-   ```bash
-   jupyter notebook
-   ```
-
-4. Open `notebook_43.ipynb` and run all cells sequentially.
-
----
-
-## 📦 Requirements
-
-- Python 3.8+
-- pandas
-- numpy
-- matplotlib / seaborn
-- scikit-learn
-- xgboost
-- jupyter
-
-> All packages can be installed via `requirements.txt`.
 
 ---
 
 ## 👤 Author
 
-**[Your Full Name]**  
+**[Netanel Druyan]**  
 23 y/o Computer Science student passionate about AI, data, and real-world applications of machine learning.
 
 ---
 
-## 🙌 Acknowledgements
-
-Thanks to our course instructor **Ron [Last Name]** for guidance and structure throughout this project.
